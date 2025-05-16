@@ -1,0 +1,20 @@
+.nav {
+    display: flex;
+    background-color: rgb(250, 153, 118);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: end;
+    color: black;
+    background-color: rgb(250, 153, 118);
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}

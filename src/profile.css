@@ -1,0 +1,36 @@
+.profile {
+    background-color: bisque;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px black(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: Left;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.img {
+    max-width: 80%;
+    min-width: 300px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .img {
+        min-width: 250px;
+        height: auto;
+        
+    }
+}
+
+.profile .profile-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    color: rgb(250, 153, 118);
+}
+
+.profile .profile-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    max-width: 350px;
+}

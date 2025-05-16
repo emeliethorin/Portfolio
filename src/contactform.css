@@ -1,0 +1,53 @@
+.contact-heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    color: coral;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.input-field {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+    width: 400px;
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.input-message {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+    width: 400px;
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.submit-btn {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: coral;
+    color: white;
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
