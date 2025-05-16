@@ -27,7 +27,6 @@ function ContactForm() {
       return;
     }
 
-    // You would send the data here using fetch or axios
     console.log("Form submitted:", formData);
 
     setSubmitted(true);
