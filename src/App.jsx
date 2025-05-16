@@ -3,7 +3,7 @@ import Home from "./Pages/Home.jsx";
 import Profile from "./Pages/Profile.jsx";
 import Portfolio from './Pages/Portfolio.jsx';
 import Navbar from "./Navbar.jsx";
-import Contact from './Pages/Contaxt.jsx';
+import Contact from './Pages/Contact.jsx';
 
 function App() {
   return (
