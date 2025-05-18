@@ -16,7 +16,7 @@ function ProjectOne(props) {
 
     return (
         <div className="project">
-            <button onClick={openPopup}>Open popup</button>
+            <button className="open-button" onClick={openPopup}>Open popup</button>
             <h2 className="project-title">{props.title}</h2>
             <img src={projectPic} alt="project picture" className="project-img"/>
             <h4 className="h4">{props.heading}</h4>
@@ -28,8 +28,8 @@ function ProjectOne(props) {
             <a href="https://github.com/ssannejohansson/SpaceWorld" className="project-link">Github repo</a>
             
             {isOpen && (<PopupWindow 
-                title="Group project details"
-                info="More information about the project" 
+                title="More information"
+                info="This was my first group project!" 
                 onClick={closePopup}
                 />
                 )}
