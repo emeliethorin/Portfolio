@@ -16,7 +16,7 @@ function ProjectOne(props) {
 
     return (
         <div className="project" onClick={openPopup}>
-            <i className="fas fa-info-circle open-icon"></i>
+            <i className="fas fa-info-circle open-icon" style={{ color: "white", float: "right" }}></i>
             <h2 className="project-title">{props.title}</h2>
             <img src={projectPic} alt="project picture" className="project-img"/>
             <h4 className="h4">{props.heading}</h4>
@@ -33,7 +33,8 @@ function ProjectOne(props) {
             
             {isOpen && (<PopupWindow 
                 title={props.title}
-                info="This was my first group project!"
+                info="This was my first group project! It was really nice to collaborate with others, grow ideas and get inspired from each other."
+                githubLink="https://github.com/ssannejohansson/SpaceWorld"
                 onClick={closePopup}
                 />
                 )}

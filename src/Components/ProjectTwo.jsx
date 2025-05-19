@@ -16,7 +16,7 @@ function ProjectTwo(props) {
 
     return (
         <div className="project" onClick={openPopup}>
-            <i className="fas fa-info-circle open-icon"></i>
+            <i className="fas fa-info-circle open-icon" style={{ color: "white", float: "right" }}></i>
             <h2 className="project-title">{props.title}</h2>
             <img src={projectPic} alt="project picture" className="project-img"/>
             <h4 className="h4">{props.heading}</h4>
@@ -33,7 +33,8 @@ function ProjectTwo(props) {
 
             {isOpen && (<PopupWindow 
                 title={props.title}
-                info="I really like how animations can improve the user experience and make the website more dynamic." 
+                info="I really like how animations can improve the user experience and make the website more dynamic."
+                githubLink="https://github.com/emeliethorin/valentines"
                 onClick={closePopup}
                 />
                 )}
