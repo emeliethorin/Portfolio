@@ -27,6 +27,8 @@ function ProjectOne(props) {
             <p className="project-text">I think the biggest challenge we had was the insecurity around doing everything in the right way as a group, as none of us had experience from this type of work.</p>
             <a href="https://github.com/ssannejohansson/SpaceWorld"
                 className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}>Github repo</a>
             
             {isOpen && (<PopupWindow 
