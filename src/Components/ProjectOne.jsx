@@ -15,8 +15,8 @@ function ProjectOne(props) {
     }
 
     return (
-        <div className="project">
-            <i className="fas fa-info-circle open-icon" onClick={openPopup}></i>
+        <div className="project" onClick={openPopup}>
+            <i className="fas fa-info-circle open-icon"></i>
             <h2 className="project-title">{props.title}</h2>
             <img src={projectPic} alt="project picture" className="project-img"/>
             <h4 className="h4">{props.heading}</h4>
@@ -25,11 +25,14 @@ function ProjectOne(props) {
             <p className="project-text">{props.learnings}</p>
             <p className="project-text">I created a design in Adobe XD to create some ideas to build on and I documented our meetings etc. Also was also responsible for coding the startpage.</p>
             <p className="project-text">I think the biggest challenge we had was the insecurity around doing everything in the right way as a group, as none of us had experience from this type of work.</p>
-            <a href="https://github.com/ssannejohansson/SpaceWorld" className="project-link">Github repo</a>
+            <a href="https://github.com/ssannejohansson/SpaceWorld"
+                className="project-link"
+                onClick={(e) => e.stopPropagation()}>Github repo</a>
             
             {isOpen && (<PopupWindow 
                 title="More information"
                 info="This was my first group project!" 
+                link="https://github.com/ssannejohansson/SpaceWorld"
                 onClick={closePopup}
                 />
                 )}
