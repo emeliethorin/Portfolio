@@ -16,7 +16,7 @@ function ProjectOne(props) {
 
     return (
         <div className="project">
-            <button className="open-button" onClick={openPopup}>Open popup</button>
+            <i className="fas fa-info-circle open-icon" onClick={openPopup}></i>
             <h2 className="project-title">{props.title}</h2>
             <img src={projectPic} alt="project picture" className="project-img"/>
             <h4 className="h4">{props.heading}</h4>
