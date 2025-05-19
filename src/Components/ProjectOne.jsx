@@ -32,9 +32,8 @@ function ProjectOne(props) {
                 onClick={(e) => e.stopPropagation()}>Github repo</a>
             
             {isOpen && (<PopupWindow 
-                title="More information"
-                info="This was my first group project!" 
-                link="https://github.com/ssannejohansson/SpaceWorld"
+                title={props.title}
+                info="This was my first group project!"
                 onClick={closePopup}
                 />
                 )}

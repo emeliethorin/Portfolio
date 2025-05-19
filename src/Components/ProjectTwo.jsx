@@ -32,9 +32,8 @@ function ProjectTwo(props) {
                 onClick={(e) => e.stopPropagation()}>Github repo</a>
 
             {isOpen && (<PopupWindow 
-                title="More information"
+                title={props.title}
                 info="I really like how animations can improve the user experience and make the website more dynamic." 
-                link="https://github.com/ssannejohansson/SpaceWorld"
                 onClick={closePopup}
                 />
                 )}
