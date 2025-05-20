@@ -21,10 +21,10 @@ function ProjectTwo(props) {
             <img src={projectPic} alt="project picture" className="project-img"/>
             <h4 className="h4">{props.heading}</h4>
             <p className="project-text">{props.tech}</p>
-            <p className="project-text">The main requirements in this {props.title} was to build a small website including at least one CSS transition, at least one keyframe animation and at least one animation added from an external library such as animate.css. </p>
+            <p className="project-text">{props.purpose}</p>
             <p className="project-text">{props.learnings}</p>
-            <p className="project-text"></p>
-            <p className="project-text"></p>
+            <p className="project-text">{props.role}</p>
+            <p className="project-text">{props.challenge}</p>
             <a href="https://github.com/emeliethorin/valentines" 
                 className="project-link" 
                 target="_blank"
