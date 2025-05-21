@@ -10,6 +10,8 @@ const LaunchProjects = () => {
         setShowProjects(prev => !prev);
     };
 
+    const [search, setSearch] = useState("");
+
     const projects = [
         {
             title: "Group project",
@@ -47,9 +49,21 @@ const LaunchProjects = () => {
 
     return (
         <div>
+            <h1 className="pageTitle">My portfolio</h1>
+            <p className="default-text">Here are some of the projects I have worked on.</p>
+            <div className="button-wrapper">
             <button className="submit-btn" onClick={handleClick}>
                 {showProjects ? "Hide projects" : "View all projects"}
             </button>
+            </div>
+            <div className="search-wrapper">
+                <input className="search"
+                type="text"
+                placeholder="Search project"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                />
+            </div>
 
             {showProjects && (
                 <div className="flex-container">
