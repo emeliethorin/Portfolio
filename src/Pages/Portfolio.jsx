@@ -7,7 +7,7 @@ const LaunchProjects = () => {
     const [showProjects, setShowProjects] = useState(false);
 
     const handleClick = () => {
-        setShowProjects(true);
+        setShowProjects(prev => !prev);
     };
 
     const projects = [
@@ -48,7 +48,7 @@ const LaunchProjects = () => {
     return (
         <div>
             <button className="submit-btn" onClick={handleClick}>
-                Click to view projects
+                {showProjects ? "Hide projects" : "View all projects"}
             </button>
 
             {showProjects && (
