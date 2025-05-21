@@ -14,8 +14,8 @@ function Project(props) {
     };
 
     return (
-        <div className="project" onClick={openPopup}>
-            <i className="fas fa-info-circle open-icon" style={{ color: "white", float: "right" }}></i>
+        <div className="project">
+            <i className="fas fa-info-circle open-icon" style={{ color: "white", float: "right" }} onClick={openPopup}></i>
             <h2 className="project-title">{props.title}</h2>
             <img src={props.image} alt="project" className="project-img" />
             <h4 className="h4">{props.heading}</h4>

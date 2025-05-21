@@ -23,7 +23,7 @@
 }
 
 .project:hover {
-    transform: translateY(-10px) scale(1.02);
+    border: 2px solid #a6a6a6;
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
