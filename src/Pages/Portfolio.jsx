@@ -56,21 +56,38 @@ const LaunchProjects = () => {
                 {showProjects ? "Hide projects" : "View all projects"}
             </button>
             </div>
-            <div className="search-wrapper">
-                <input className="search"
-                type="text"
-                placeholder="Search project"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                />
-            </div>
 
             {showProjects && (
+                <>
+                 <div className="search-wrapper">
+                    <input className="search"
+                    type="text"
+                    placeholder="Search project"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    />
+                </div>
+
                 <div className="flex-container">
-                    {projects.map((project, index) => (
+                    {projects
+                    .filter((project) =>
+                        (
+                            project.title +
+                            project.heading +
+                            project.tech +
+                            project.purpose +
+                            project.learnings +
+                            project.role +
+                            project.challenge
+                          )
+                          .toLowerCase()
+                          .includes(search.toLowerCase())
+                    )
+                    .map((project, index) => (
                         <Project key={index} {...project} />
                     ))}
                 </div>
+                </>
             )}
         </div>
     );
